@@ -1,0 +1,32 @@
+ /**/
+
+
+.navbar{
+    position: fixed; /*This makes the .navbar element fixed in its position relative to the viewport. It will stay in the same place even when the page is scrolled.*/
+    top:0;  /*This places the .navbar at the very top of the viewport (the top edge of the browser window).*/
+    width: 100%; /*This makes the .navbar span the full width of the viewport, from the left edge to the right edge.*/
+    height: 30px; /*This sets the height of the .navbar to 30 pixels.*/
+    padding: 20px; /*This adds 20 pixels of padding inside the .navbar on all sides (top, right, bottom, left).*/
+
+    /*No, you cannot use justify-content: space-between; without display: flex; or display: inline-flex; on the parent container. Here’s why:
+    Flex Container Requirement: justify-content is a property that only applies to flex containers (display: flex; or display: inline-flex;). It controls how the flex items are distributed along the main axis of the flex container.
+    Without Flex Container: If you apply justify-content: space-between; to a non-flex container, it will have no effect because there's no flex layout context to define what "space-between" means.*/
+    display: flex; /*turns an element into a flex container.This means that its children (direct child elements) become flex items and are laid out according to the flexbox model.*/
+    justify-content: space-between; /*This distributes the child elements of the .navbar so that there is equal space between them. The first child will be aligned to the start (left), and the last child will be aligned to the end (right), with space distributed evenly between the children.,t means:Put the first item at the far left.Put the last item at the far right.Spread the remaining items out evenly in between.*/
+
+
+    background-color:#111 ; /**/
+
+}
+
+.logo{
+     position: fixed; /* This property fixes the element in a specific position on the screen. It means that the element will stay in the same place even when the user scrolls*/
+     left: 20px;/*This property sets the element 20 pixels from the left side of the viewport. Since the position is fixed, this means the element will always stay 20 pixels from the left edge of the screen.*/
+     width: 80px;
+}
+
+.avatar{
+    position: fixed;
+    right: 20px;
+    width: 30px;
+}
