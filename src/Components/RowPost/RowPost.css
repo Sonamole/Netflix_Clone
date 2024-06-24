@@ -5,13 +5,15 @@
 }
 
 .posters{
-    display: flex;
+    display: flex; /*This property makes the .posters element a flex container. Flexbox is a layout model that allows you to align and distribute elements within a container along a flex direction (row or column) and control their sizing, spacing, and alignment.*/
     padding: 20px;
-    overflow-x: scroll;
-    overflow-y: hidden;
-
-
+    overflow-x: scroll; /*Enables horizontal scrolling inside the .posters element. If the content inside the flex container overflows horizontally (i.e., extends beyond the container's width), users can scroll horizontally to view the hidden content.    */
+    overflow-y: hidden;/*Hides vertical scrolling inside the .posters element. This property ensures that even if there is content that extends vertically beyond the container's height, it won't create a vertical scrollbar.*/
 }
+/*::-webkit-scrollbar:This is a pseudo-element selector specific to WebKit-based browsers (like Chrome and Safari) that allows you to style the scrollbar of an element.
+display: none:This CSS property is applied to the ::-webkit-scrollbar pseudo-element to hide the scrollbar entirely.
+The ::-webkit-scrollbar pseudo-element is used to style the scrollbar in WebKit browsers. By default, browsers show scrollbars when content overflows the container. This pseudo-element allows you to customize its appearance or, as in this case, hide it completely.
+*/
 .posters::-webkit-scrollbar{
     display: none;
 
@@ -19,6 +21,12 @@
 
 .poster{
     max-height: 250px;
+    margin-right: 10px;
+
+}
+
+.smallPoster{
+    max-height: 150px;
     margin-right: 10px;
 
 }

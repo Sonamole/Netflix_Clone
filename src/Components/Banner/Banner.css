@@ -1,5 +1,5 @@
 .banner{
-    background-image: url('https://wallpaperaccess.com/full/2703652.png');
+    /* background-image: url('https://wallpaperaccess.com/full/2703652.png'); */
 
     /* Combining background-size: cover; with a specified height allows you to control how the background image fills the container. It ensures the image covers the area while maintaining a consistent height for design purposes.*/
     background-size:cover ;/* the image will be scaled to cover the entire background of the .banner element. It ensures the entire area of .banner is filled with the image, without stretching or distorting it.*/
@@ -59,7 +59,7 @@
     height:7.4rem;
     background-image:linear-gradient(180deg,transparent,rgba(37,37,37),#111);
     /*
-    180deg indicates that the gradient is vertical (from top to bottom). where 0deg is top to bottom
+    180deg indicates that the gradient is vertical (from top to bottom). where 0deg is bottom to top
     transparent is the starting color of the gradient at the top.
     rgba(37, 37, 37, 1) is a semi-transparent dark gray color defined using RGBA notation. The rgba values are 37 for red, 37 for green, 37 for blue, and 1 for full opacity.it is in the midddle
     #111 is a solid dark gray color defined using hexadecimal notation.*/
