@@ -9,11 +9,11 @@ function App() {
   <div>
     <NavBar/>
     <Banner/>
-    <RowPost url={originals} title='Netflix Originals'/>
+    <RowPost url={originals} title='Netflix Originals ' />
     <RowPost url={action} title='Action' isSmall/>
     <RowPost url={horror} title='Horror' isSmall/>
     <RowPost url={documentaries} title='Documentaries' isSmall/>
-    <RowPost url={comedy} title='Comedy' />
+    <RowPost url={comedy} title='Comedy' isSmall />
   </div>
   );
 }

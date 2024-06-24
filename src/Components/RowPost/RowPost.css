@@ -22,11 +22,27 @@ The ::-webkit-scrollbar pseudo-element is used to style the scrollbar in WebKit 
 .poster{
     max-height: 250px;
     margin-right: 10px;
+    cursor: pointer;
 
 }
 
 .smallPoster{
     max-height: 150px;
     margin-right: 10px;
+    cursor: pointer;
 
+}
+
+.poster:hover,
+.smallPoster:hover {
+    transform: scale(1.1);
+}
+
+
+/* .poster:hover, .smallPoster:hover: This selector targets both elements with the class poster and smallPoster that are being hovered over (:hover pseudo-class).
+
+transform: scale(1.1);: This property applies a scaling effect to both .poster and .smallPoster elements when they are hovered over, enlarging them by 10%. */
+
+.movieName{
+    text-align: center;
 }
